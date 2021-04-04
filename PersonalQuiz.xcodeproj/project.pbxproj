@@ -13,6 +13,7 @@
 		44FC1DF1261A23FD00FB9E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FC1DEF261A23FD00FB9E5F /* Main.storyboard */; };
 		44FC1DF3261A23FE00FB9E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FC1DF2261A23FE00FB9E5F /* Assets.xcassets */; };
 		44FC1DF6261A23FE00FB9E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FC1DF4261A23FE00FB9E5F /* LaunchScreen.storyboard */; };
+		44FC1E08261A450200FB9E5F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC1E07261A450200FB9E5F /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		44FC1DF2261A23FE00FB9E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44FC1DF5261A23FE00FB9E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44FC1DF7261A23FE00FB9E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FC1E07261A450200FB9E5F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		44FC1DE8261A23FD00FB9E5F /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				44FC1DE9261A23FD00FB9E5F /* AppDelegate.swift */,
-				44FC1DEB261A23FD00FB9E5F /* SceneDelegate.swift */,
-				44FC1DED261A23FD00FB9E5F /* ViewController.swift */,
-				44FC1DEF261A23FD00FB9E5F /* Main.storyboard */,
-				44FC1DF2261A23FE00FB9E5F /* Assets.xcassets */,
-				44FC1DF4261A23FE00FB9E5F /* LaunchScreen.storyboard */,
-				44FC1DF7261A23FE00FB9E5F /* Info.plist */,
+				44FC1DFE261A24C200FB9E5F /* ViewControlers */,
+				44FC1DFF261A253100FB9E5F /* Models */,
+				44FC1E00261A258B00FB9E5F /* StoryBoards */,
+				44FC1E02261A25F000FB9E5F /* Supporting */,
+				44FC1E01261A25B800FB9E5F /* Resourses */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		44FC1DFE261A24C200FB9E5F /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				44FC1DED261A23FD00FB9E5F /* ViewController.swift */,
+			);
+			path = ViewControlers;
+			sourceTree = "<group>";
+		};
+		44FC1DFF261A253100FB9E5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44FC1E07261A450200FB9E5F /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44FC1E00261A258B00FB9E5F /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				44FC1DEF261A23FD00FB9E5F /* Main.storyboard */,
+				44FC1DF4261A23FE00FB9E5F /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		44FC1E01261A25B800FB9E5F /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				44FC1DF2261A23FE00FB9E5F /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		44FC1E02261A25F000FB9E5F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				44FC1DF7261A23FE00FB9E5F /* Info.plist */,
+				44FC1DE9261A23FD00FB9E5F /* AppDelegate.swift */,
+				44FC1DEB261A23FD00FB9E5F /* SceneDelegate.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FC1DEE261A23FD00FB9E5F /* ViewController.swift in Sources */,
+				44FC1E08261A450200FB9E5F /* Question.swift in Sources */,
 				44FC1DEA261A23FD00FB9E5F /* AppDelegate.swift in Sources */,
 				44FC1DEC261A23FD00FB9E5F /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FK38VJ3T7;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FK38VJ3T7;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
